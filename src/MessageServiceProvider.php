@@ -1,5 +1,5 @@
 <?php
-namespace AhmedEid\Message;
+namespace AhmedGomaaEid\Message;
 
 use Illuminate\Support\ServiceProvider;
 

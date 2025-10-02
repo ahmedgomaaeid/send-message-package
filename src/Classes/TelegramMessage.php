@@ -1,6 +1,6 @@
 <?php
 
-namespace AhmedEid\Message\Classes;
+namespace AhmedGomaaEid\Message\Classes;
 
 class TelegramMessage
 {

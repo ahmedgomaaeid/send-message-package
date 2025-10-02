@@ -1,11 +1,11 @@
 {
-    "name": "ahmedeid/message",
+    "name": "ahmedgomaaeid/message",
     "description": "send messages library",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "AhmedEid\\Message\\": "src/"
+            "AhmedGomaaEid\\Message\\": "src/"
         }
     },
     "authors": [
