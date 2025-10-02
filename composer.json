@@ -1,0 +1,19 @@
+{
+    "name": "ahmedeid/message",
+    "description": "send messages library",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "AhmedEid\\Message\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ahmedgomaaeid",
+            "email": "pahmedgomaaeid@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
