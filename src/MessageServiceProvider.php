@@ -14,7 +14,9 @@ class MessageServiceProvider extends ServiceProvider
     {
         $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
         $this->loadViewsFrom(__DIR__.'/views', 'message');
-
+        $this->publishes([
+            __DIR__.'/views' => resource_path('views/vendor/message'),
+        ], 'message-views');
     }
 
 
