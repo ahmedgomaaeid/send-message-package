@@ -124,6 +124,12 @@ $message->addBoldText('Bold text');
 // Lists
 $message->addList(['Item 1', 'Item 2', 'Item 3']);
 
+// List with key-value pairs
+$message->addListWithKeyValue(['Key1' => 'Value1', 'Key2' => 'Value2']);
+
+// Hyperlinks
+$message->addLink('Click Here', 'https://example.com');
+
 // Send the message
 $message->send();
 ```
