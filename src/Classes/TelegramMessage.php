@@ -30,6 +30,19 @@ class TelegramMessage
         }
         return $this;
     }
+    public function addListWithKeyValue(array $items)
+    {
+        foreach ($items as $key => $value) {
+            $this->text .= "\n<b>" . $key . ":</b> " . $value;
+        }
+        return $this;
+    }
+
+    public function addLink($text, $url)
+    {
+        $this->text .= "<a href='" . $url . "'>" . $text . "</a>";
+        return $this;
+    }
 
     public function send()
     {

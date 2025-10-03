@@ -53,7 +53,6 @@ The package will automatically register its service provider. If you need to reg
 1. **Add your bot token** to your `.env` file:
 ```env
 TELEGRAM_BOT_TOKEN=your_telegram_bot_token_here
-TELEGRAM_CHAT_ID=your_chat_id_here
 ```
 
 2. **Get your Chat ID** (First time setup):
@@ -109,6 +108,7 @@ $message->addBoldText('🛒 New Order Received!')
         ->addLine('Customer: John Doe')
         ->addLine('Amount: $199.99')
         ->addLine('Status: Processing')
+        ->addLink('View Order', 'https://your-app-url.com/orders/12345')
         ->send();
 ```
 
@@ -135,6 +135,8 @@ $message->send();
 | `addLine($text)` | Add a regular text line | `->addLine('Hello World')` |
 | `addBoldText($text)` | Add bold formatted text | `->addBoldText('Important!')` |
 | `addList($array)` | Add a bulleted list | `->addList(['A', 'B', 'C'])` |
+| `addListWithKeyValue($array)` | Add a list with key-value pairs | `->addListWithKeyValue(['Key1' => 'Value1', 'Key2' => 'Value2'])` |
+| `addLink($text, $url)` | Add a hyperlink | `->addLink('Click Here', 'https://example.com')` |
 | `send()` | Send the composed message | `->send()` |
 
 ## 🔧 Troubleshooting
